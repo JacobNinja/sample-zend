@@ -18,8 +18,12 @@ class Module implements AutoloaderProviderInterface, ConfigProviderInterface
     public function smell()
     {
         // Error suppress
-        @a();
         @highParams("1", "2", "3", "4", "5", "6", "7");
+    }
+
+    public function moveErrorSuppress()
+    {
+        @a();
     }
 
     // Short method name
